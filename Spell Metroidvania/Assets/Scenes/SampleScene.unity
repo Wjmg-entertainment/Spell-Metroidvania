@@ -503,6 +503,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  animator: {fileID: 1291944107}
 --- !u!114 &1291944106
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,9 +13,13 @@ public class PlayerMovementScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    public Animator animator;
+
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         if (Input.GetButtonDown("Jump") && isGrounded())
         {
