@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 398000b534ef20e488eb7159be37407c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bill sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1265
+        width: 239
+        height: 144
+      alignment: 9
+      pivot: {x: 0.56669784, y: 0.4138955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19113c91fc2c0d34a95b8bb22d380408
+      internalID: -1278890142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1258
+        width: 243
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9251e8ddf0f523469f617f229475e2c
+      internalID: 30036520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1089
+        width: 244
+        height: 160
+      alignment: 9
+      pivot: {x: 0.50725895, y: 0.49999923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70937176a2df814699f6f59849683fd
+      internalID: -1059028574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1087
+        width: 215
+        height: 162
+      alignment: 9
+      pivot: {x: 0.5164764, y: 0.4343985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6999d44844592714883bac1124cf9ab2
+      internalID: 1769033616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 897
+        width: 241
+        height: 182
+      alignment: 9
+      pivot: {x: 0.38240907, y: 0.4999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b436c2f541258a45beea31a204df8f5
+      internalID: 1356843258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1098
+        width: 297
+        height: 268
+      alignment: 9
+      pivot: {x: 0.4403629, y: 0.5859165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b444f915781fb4b88d570dc87eb10a
+      internalID: -323248616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 834
+        width: 250
+        height: 243
+      alignment: 9
+      pivot: {x: 0.4504059, y: 0.5437333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a866bd379bfb3484a864bc81989f9e03
+      internalID: 1107303160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 815
+        width: 282
+        height: 267
+      alignment: 9
+      pivot: {x: 0.4371905, y: 0.6194072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c7d78d55fd99248a247e83495cb3ce
+      internalID: -1563324543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 519
+        width: 239
+        height: 275
+      alignment: 9
+      pivot: {x: 0.61921126, y: 0.50652546}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5e0302df393614585662dc1aae95b1
+      internalID: -375441296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 305
+        height: 286
+      alignment: 9
+      pivot: {x: 0.39619842, y: 0.48154327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6103d51bc3f652459ed81b5ced5ce40
+      internalID: 1224182895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bill sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 440
+        width: 334
+        height: 297
+      alignment: 9
+      pivot: {x: 0.45283335, y: 0.53001535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b82a09c745ca8d4cb9ef0b1e1a6118d
+      internalID: 459619221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bill sprite sheet_10: 1036844822
+      bill sprite sheet_1: -538727362
+      bill sprite sheet_3: 1090350166
+      bill sprite sheet_5: 310544004
+      bill sprite sheet_7: 2122707355
+      bill sprite sheet_8: -1278890142
+      bill sprite sheet_4: -755872823
+      bill sprite sheet_6: -148481026
+      bill sprite sheet_9: 30036520
+      bill sprite sheet_2: 957128392
+      bill sprite sheet_0: 436109805
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
