@@ -49,6 +49,8 @@ public class enemyPatrol : MonoBehaviour
             flipSprite();
             currentPoint = pointB.transform;
         }
+
+        
     }
 
     private void flipSprite()
@@ -57,4 +59,5 @@ public class enemyPatrol : MonoBehaviour
         localScale.x *= -1f;
         transform.localScale = localScale;
     }
+
 }
