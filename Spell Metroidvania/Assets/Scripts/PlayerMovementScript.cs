@@ -20,6 +20,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     public Animator animator;
 
+    public HealthManagerScript healthManager;
+
     void Update()
     {
         handleMovementAndJumping();
@@ -66,6 +68,14 @@ public class PlayerMovementScript : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            healthManager.takeDamage(10);
         }
     }
 }

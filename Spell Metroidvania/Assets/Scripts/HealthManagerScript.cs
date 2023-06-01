@@ -9,18 +9,6 @@ public class HealthManagerScript : MonoBehaviour
     public Image healthbar;
     public float healthAmount = 100f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        dealDamageAndHealDamage();
-    }
-
     /**
      * Method that checks if player is dead. If so, restart the scene
      */
@@ -28,23 +16,7 @@ public class HealthManagerScript : MonoBehaviour
     {
         if(healthAmount <= 0)
         {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-    }
-
-    /**
-     * Method for testing taking damage and healing using inputs for now
-     */
-    public void dealDamageAndHealDamage()
-    {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            takeDamage(20);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            heal(5);
+            //Application.LoadLevel(Application.loadedLevel);
         }
     }
 
