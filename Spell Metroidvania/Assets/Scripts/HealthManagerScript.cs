@@ -9,6 +9,13 @@ public class HealthManagerScript : MonoBehaviour
     public Image healthbar;
     public float healthAmount = 100f;
 
+    public Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     /**
      * Method that checks if player is dead. If so, restart the scene
      */
@@ -24,6 +31,8 @@ public class HealthManagerScript : MonoBehaviour
     {
         healthAmount -= damage;
         healthbar.fillAmount = healthAmount / 100f;
+        animator.SetBool("isHurt", true);
+        //animator.SetBool("isHurt", false);
     }
 
     public void heal(float healingAmount)
