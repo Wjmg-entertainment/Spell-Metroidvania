@@ -13,26 +13,19 @@ public class HealthManagerScript : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
     /**
      * Method that checks if player is dead. If so, restart the scene
      */
-    public void restartGame()
+    public void checkIfDead()
     {
         if(healthAmount <= 0)
         {
+            animator.SetBool("isDead", true);
             //Application.LoadLevel(Application.loadedLevel);
         }
-    }
-
-    public void takeDamage(float damage)
-    {
-        healthAmount -= damage;
-        healthbar.fillAmount = healthAmount / 100f;
-        animator.SetBool("isHurt", true);
-        //animator.SetBool("isHurt", false);
     }
 
     public void heal(float healingAmount)
@@ -41,5 +34,23 @@ public class HealthManagerScript : MonoBehaviour
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
         healthbar.fillAmount = healthAmount / 100f;
+    }
+
+    /**
+     * Method that deals damage to player and plays hurt animation
+     */
+    public void applyDamage(float damage)
+    {
+        healthAmount -= damage;
+        healthbar.fillAmount = healthAmount / 100f;
+        //animator.SetBool("isHurt", true);
+        StartCoroutine(ResetIsHurt());
+    }
+
+    //method that waits a second before turning off hurt aniamtion
+    private IEnumerator ResetIsHurt()
+    {
+        yield return new WaitForSeconds(1f);
+        animator.SetBool("isHurt", false);
     }
 }

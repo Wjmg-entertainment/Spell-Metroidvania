@@ -34,7 +34,10 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: isHurt
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 879717318218849518}
   m_Solo: 0
@@ -85,19 +88,19 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 879717318218849518}
-    m_Position: {x: 230, y: -150, z: 0}
+    m_Position: {x: 40, y: -300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7975007250237744871}
-    m_Position: {x: 470, y: -150, z: 0}
+    m_Position: {x: 280, y: -300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1596526999909340005}
-    m_Position: {x: 240, y: -10, z: 0}
+    m_Position: {x: 50, y: -160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3032176161730428602}
-    m_Position: {x: 230, y: -70, z: 0}
+    m_Position: {x: 40, y: -230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5211118080652519788}
-    m_Position: {x: 250, y: 50, z: 0}
+    m_Position: {x: 60, y: -100, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 7153527084638334252}
@@ -106,9 +109,9 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -90, y: -100, z: 0}
-  m_EntryPosition: {x: -90, y: -150, z: 0}
-  m_ExitPosition: {x: -90, y: -200, z: 0}
+  m_AnyStatePosition: {x: -160, y: -250, z: 0}
+  m_EntryPosition: {x: -160, y: -300, z: 0}
+  m_ExitPosition: {x: -160, y: -350, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 879717318218849518}
 --- !u!91 &9100000
@@ -125,31 +128,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Jump
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isDead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isHurt
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

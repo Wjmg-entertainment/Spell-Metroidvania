@@ -12,6 +12,7 @@ public class PlayerMovementScript : MonoBehaviour
     private float verticalMovement;
     private float speedValue = 10f;
     private float jumpingValue = 14f;
+    private float knockbackForce = 10f;
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -75,7 +76,15 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            healthManager.takeDamage(10);
+            healthManager.applyDamage(10);
+            applyKnockback();
         }
+        healthManager.checkIfDead();
+    }
+
+    private void applyKnockback()
+    {
+        rb.AddForce(new Vector2(knockbackForce, knockbackForce));
+        animator.SetBool("isHurt", true);
     }
 }
