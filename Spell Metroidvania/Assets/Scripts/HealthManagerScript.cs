@@ -44,11 +44,11 @@ public class HealthManagerScript : MonoBehaviour
         healthAmount -= damage;
         healthbar.fillAmount = healthAmount / 100f;
         //animator.SetBool("isHurt", true);
-        StartCoroutine(ResetIsHurt());
+        StartCoroutine(resetIsHurt());
     }
 
     //method that waits a second before turning off hurt aniamtion
-    private IEnumerator ResetIsHurt()
+    private IEnumerator resetIsHurt()
     {
         yield return new WaitForSeconds(1f);
         animator.SetBool("isHurt", false);
