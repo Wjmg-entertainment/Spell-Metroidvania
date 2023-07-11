@@ -36,8 +36,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void handleMovementAndJumping()
     {
-        if (noPlayerControl == false)
-        {
+        //if (noPlayerControl == false)
+        //{
             horizontalMovement = Input.GetAxisRaw("Horizontal");
             verticalMovement = rb.velocity.y;
             animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
@@ -45,6 +45,7 @@ public class PlayerMovementScript : MonoBehaviour
 
             if (Input.GetButtonDown("Jump") && isGrounded())
             {
+                Debug.Log("jumping");
                 rb.velocity = new Vector2(rb.velocity.x, jumpingValue);
             }
 
@@ -52,8 +53,9 @@ public class PlayerMovementScript : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
             }
-        }
+        //}
     }
+
 
     void Awake()
     {
